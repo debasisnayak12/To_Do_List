@@ -1,5 +1,144 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1.5fr 5fr;
+}
+.top {
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.inputText {
+  position: absolute;
+  top: 18%;
+  left: 30%;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
+}
+.inputText input {
+  width: 500px;
+  /* max-width: 500px; */
+  height: auto;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #0d0d0d;
+  background: #262626;
+  color: #fff;
+  outline: none;
+}
+.inputText button {
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #1e6f9f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.bottom {
+  background-color: #1a1a1a;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head img {
+  margin-inline: 12px;
+}
+.head .to {
+  color: #4ea8de;
+  font-size: 40px;
+  font-weight: 900;
+}
+.head .do {
+  color: #5e60ce;
+  font-size: 40px;
+  font-weight: 900;
+}
+.bot-container {
+  margin-top: 50px !important;
+  width: 736px;
+  height: auto;
+  margin: auto;
+}
+.showTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.showTask .left,
+.showTask .right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.showTask .left {
+  color: #4ea8de;
+}
+.showTask .right {
+  color: #8284fa;
+}
+.showTask input {
+  width: 50px;
+  /* max-width: 100%; */
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: #fff;
+  background: #333;
+  border: none;
+  outline: none;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+.todo-list {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #262626;
+  color: #fff;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+.btn{
+    cursor: pointer;
+}
+.checked {
+  text-decoration: line-through;
+  color: grey;
+}
+.emptyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #808080;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
 }
